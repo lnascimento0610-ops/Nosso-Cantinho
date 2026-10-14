@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16070d">
+<title>Nosso cantinho ❤️</title>
+<style>
+:root{--bg:#10070c;--panel:#1d0b13;--red:#ff3158;--pink:#ff8ca3;--text:#fff3f5;--muted:#d6aeb8;--line:#592033}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#401020 0,#16070d 48%,#090509 100%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+a{color:#ffb1c0}.wrap{width:min(920px,92%);margin:auto}.hero{min-height:88vh;display:grid;place-items:center;text-align:center;padding:70px 0 45px;position:relative}.eyebrow{color:var(--pink);letter-spacing:.18em;text-transform:uppercase;font-size:.75rem}.hero h1{font-family:Georgia,serif;font-size:clamp(2.8rem,10vw,5.8rem);line-height:.98;margin:16px 0;color:#fff;text-shadow:0 0 30px #ff315866}.hero p{max-width:600px;margin:18px auto;color:var(--muted);font-size:1.05rem;line-height:1.7}.heart{display:inline-block;color:var(--red);animation:pulse 1.5s infinite;font-size:2.5rem}@keyframes pulse{50%{transform:scale(1.22);text-shadow:0 0 28px #ff3158}}.btn{border:1px solid #ff5574;background:linear-gradient(135deg,#ff3158,#a90e38);color:white;padding:13px 18px;border-radius:999px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;margin:6px;box-shadow:0 8px 25px #ff315822}.btn.secondary{background:#240d17;border-color:#713047}.section{padding:34px 0 48px}.section h2{font:clamp(1.8rem,6vw,2.5rem) Georgia,serif;margin:0 0 10px}.sub{color:var(--muted);line-height:1.6;margin-top:0}.card{background:linear-gradient(145deg,#24101aee,#150910ee);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 18px 45px #0003}.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:20px}.number{padding:16px 6px;background:#10070c;border:1px solid #482030;border-radius:15px;text-align:center}.number strong{display:block;font-size:clamp(1.5rem,5vw,2.3rem);color:#ff7892}.number span{font-size:.72rem;color:var(--muted)}.photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:15px}.photo{min-height:150px;border:1px dashed #a84862;border-radius:16px;display:grid;place-items:center;text-align:center;padding:10px;color:var(--muted);overflow:hidden;background:#10070c}.photo img{width:100%;height:210px;object-fit:cover;border-radius:12px}.photo label{cursor:pointer}.photo input{display:block;width:100%;font-size:.75rem;margin-top:8px}.letter{border-left:3px solid var(--red);padding:12px 0 12px 17px;color:#ffe2e8;line-height:1.75;white-space:pre-line}.quiz-question{font-size:1.15rem;font-weight:700;margin:16px 0}.answers{display:grid;gap:9px}.answer{padding:12px;border-radius:12px;border:1px solid #693044;background:#170912;color:var(--text);text-align:left;cursor:pointer}.answer:hover{background:#391222}.feedback{min-height:24px;color:#ff9bad;margin-top:12px}.surprise{display:none;margin-top:18px;line-height:1.8;color:#ffe1e7}.footer{text-align:center;color:#b98c98;padding:32px 0 48px;font-size:.85rem}.floating{position:fixed;bottom:-30px;pointer-events:none;z-index:3;animation:floatup 6s linear forwards;opacity:.8}@keyframes floatup{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}.small{font-size:.85rem;color:var(--muted)}.music-note{border-radius:14px;background:#11070d;border:1px solid #512037;padding:14px;line-height:1.6}
+
+.intro-screen{position:fixed;inset:0;z-index:20;display:grid;place-items:center;text-align:center;padding:28px;background:radial-gradient(ellipse at center,#4b1024 0,#17070e 58%,#070407 100%);transition:opacity .8s ease,visibility .8s ease}
+.intro-screen.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.intro-inner{max-width:560px}.intro-kicker{color:#ff9caf;letter-spacing:.2em;text-transform:uppercase;font-size:.72rem}.intro-screen h1{font:clamp(2.5rem,9vw,4.8rem)/1.02 Georgia,serif;margin:20px 0;text-shadow:0 0 28px #ff315866}.intro-screen p{color:#e9b9c5;line-height:1.7}.intro-heart{font-size:3.4rem;color:#ff3158;animation:pulse 1.5s infinite}
+
+@media(min-width:650px){.photos{grid-template-columns:repeat(3,minmax(0,1fr))}.photo img{height:240px}}@media(max-width:380px){.counter{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="intro-screen" id="intro-screen">
+  <div class="intro-inner">
+    <div class="intro-kicker">uma surpresa feita com amor</div>
+    <div class="intro-heart">♥</div>
+    <h1>Amorzinho,<br>isso é pra você</h1>
+    <p>Preparei cada detalhe pensando em nós. Abra quando estiver pronto para receber um pouquinho do meu coração. ❤️</p>
+    <button class="btn" onclick="openGift()">Abrir meu presente ❤️</button>
+  </div>
+</div>
+
+<div class="wrap">
+<header class="hero">
+  <div>
+    <div class="eyebrow">um cantinho só nosso</div>
+    <div class="heart">♥</div>
+    <h1>Para o meu<br>Amorzinho</h1>
+    <p>Meu bbzinho, meu amor meu… fiz esse pedacinho da internet para guardar um pouquinho do que sinto por você. ❤️</p>
+    <a class="btn" href="#nossa-historia">Entrar no nosso mundo ↓</a>
+  </div>
+</header>
+<main>
+<section class="section" id="nossa-historia">
+  <h2>Desde que virou “nós” ❤️</h2>
+  <p class="sub">Nossa história começou em 26 de junho de 2026. E eu escolheria viver tudo de novo com você.</p>
+  <div class="card">
+    <div class="eyebrow">juntos há</div>
+    <div class="counter" aria-live="polite">
+      <div class="number"><strong id="days">—</strong><span>DIAS</span></div>
+      <div class="number"><strong id="hours">—</strong><span>HORAS</span></div>
+      <div class="number"><strong id="minutes">—</strong><span>MINUTOS</span></div>
+      <div class="number"><strong id="seconds">—</strong><span>SEGUNDOS</span></div>
+    </div>
+    <p class="small">O contador se atualiza sozinho. ❤️</p>
+  </div>
+</section>
+<section class="section" id="fotos">
+  <h2>Nossos pedacinhos de felicidade 📸</h2>
+  <p class="sub">Toque em “Escolher foto” para colocar fotos de vocês. As fotos aparecem neste aparelho enquanto você edita; para publicar, adicione as imagens ao projeto do site conforme as instruções.</p>
+  <div class="photos">
+    <div class="photo"><label>📷 Nosso momento favorito<input type="file" accept="image/*" onchange="previewPhoto(event,0)"></label><img id="img0" alt="Foto de vocês 1" hidden></div>
+    <div class="photo"><label>💞 Um sorriso que amo<input type="file" accept="image/*" onchange="previewPhoto(event,1)"></label><img id="img1" alt="Foto de vocês 2" hidden></div>
+    <div class="photo"><label>🌙 Uma lembrança especial<input type="file" accept="image/*" onchange="previewPhoto(event,2)"></label><img id="img2" alt="Foto de vocês 3" hidden></div>
+  </div>
+  <p class="small">Dica: para as fotos aparecerem para ele no link publicado, você precisará colocar os arquivos das fotos junto do site (explico no passo a passo).</p>
+</section>
+<section class="section" id="musica">
+  <h2>A nossa trilha sonora 🎶</h2>
+  <div class="music-note">
+    <strong>“Falling Like the Stars” — James Arthur</strong>
+    <p class="sub">Uma música para lembrar que o amor pode fazer o mundo parecer um lugar só nosso.</p>
+    <a class="btn" href="https://open.spotify.com/search/Falling%20Like%20the%20Stars%20James%20Arthur" target="_blank" rel="noopener">♫ Ouvir no Spotify</a>
+    <p class="small">O botão abre a busca da música no Spotify. Se preferir, escolha a faixa oficial por lá. O site não reproduz áudio automaticamente.</p>
+  </div>
+</section>
+<section class="section" id="cartinha">
+  <h2>Uma cartinha para você 💌</h2>
+  <div class="card"><div class="letter">Meu amor,
+
+Às vezes, um dia comum fica especial só porque tenho você nele. Obrigada por ser meu companheiro, por dividir seus momentos comigo e por fazer nascer tantos sorrisos em mim.
+
+Quero continuar colecionando lembranças, conversas bobas, abraços demorados e planos para o futuro. Não precisa ser uma data especial para eu te lembrar o quanto você é importante para mim.
+
+Feliz por nós, hoje e em todos os dias que ainda vêm.
+
+Com todo o meu carinho,
+sua pessoa ❤️</div></div>
+</section>
+<section class="section" id="quiz">
+  <h2>Você conhece a gente? 🥰</h2>
+  <p class="sub">Um mini joguinho! Você pode trocar as perguntas e respostas no código para deixar com a história de vocês.</p>
+  <div class="card">
+    <div class="eyebrow" id="quiz-step">pergunta 1 de 3</div>
+    <div class="quiz-question" id="question">Qual é a nossa data de namoro?</div>
+    <div class="answers" id="answers"></div>
+    <div class="feedback" id="feedback" aria-live="polite"></div>
+    <button class="btn secondary" id="next" onclick="nextQuestion()" hidden>Próxima pergunta →</button>
+  </div>
+</section>
+<section class="section" id="surpresa">
+  <h2>Tem uma surpresa para você… 🎁</h2>
+  <p class="sub">Prometo que é do coração.</p>
+  <button class="btn" onclick="showSurprise()">Toque aqui, bbzinho ❤️</button>
+  <div class="card surprise" id="surprise-text">
+    <div class="heart">♥</div>
+    <h2>Você é meu lugar favorito.</h2>
+    <p>Amorzinho, se eu pudesse te dar uma coisa, seria a chance de se enxergar pelos meus olhos por um instante — só para entender o carinho enorme que sinto por você. Não preciso de um dia especial para celebrar a sorte que é ter você na minha vida. Que a gente continue escolhendo um ao outro, com respeito, cuidado, risadas e muito amor. Eu te amo, amor meu! ❤️</p>
+  </div>
+</section>
+</main>
+<footer class="footer">feito com carinho, especialmente para você ❤️<br><span id="today"></span></footer>
+</div>
+<script>
+const startDate = new Date(2026, 5, 26, 0, 0, 0); // mês 5 = junho
+function updateCounter(){
+ const now=new Date(); let diff=Math.max(0,now-startDate);
+ const days=Math.floor(diff/86400000); const hours=Math.floor(diff%86400000/3600000);
+ const minutes=Math.floor(diff%3600000/60000); const seconds=Math.floor(diff%60000/1000);
+ document.getElementById('days').textContent=days;
+ document.getElementById('hours').textContent=hours;
+ document.getElementById('minutes').textContent=minutes;
+ document.getElementById('seconds').textContent=seconds;
+}
+updateCounter();setInterval(updateCounter,1000);
+document.getElementById('today').textContent='26.06.2026 — o começo do nosso capítulo.';
+function previewPhoto(event,index){const file=event.target.files[0];if(!file)return;const img=document.getElementById('img'+index);img.src=URL.createObjectURL(file);img.hidden=false;}
+const quiz=[
+ {q:'Qual é a nossa data de namoro?',a:['26 de junho de 2026','14 de fevereiro de 2026','26 de julho de 2026'],correct:0},
+ {q:'Qual apelido aparece neste site?',a:['Meu astronauta','Amorzinho e bbzinho','Meu docinho de coco'],correct:1},
+ {q:'O que deixa nosso amor especial?',a:['Só os presentes','Só as datas comemorativas','O carinho nas pequenas coisas'],correct:2}
+];
+let qi=0,answered=false;
+function renderQuestion(){const q=quiz[qi];document.getElementById('quiz-step').textContent=`pergunta ${qi+1} de ${quiz.length}`;document.getElementById('question').textContent=q.q;document.getElementById('feedback').textContent='';document.getElementById('next').hidden=true;answered=false;const area=document.getElementById('answers');area.innerHTML='';q.a.forEach((answer,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=answer;b.onclick=()=>chooseAnswer(i);area.appendChild(b);});}
+function chooseAnswer(i){if(answered)return;answered=true;document.querySelectorAll('.answer').forEach(b=>b.disabled=true);const q=quiz[qi];document.getElementById('feedback').textContent=i===q.correct?'Acertou, meu amor! ❤️':'Quase! O importante é a nossa história. 💗';document.getElementById('next').hidden=false;document.getElementById('next').textContent=qi===quiz.length-1?'Jogar de novo ↻':'Próxima pergunta →';}
+function nextQuestion(){qi=(qi+1)%quiz.length;renderQuestion();}
+renderQuestion();
+function openGift(){document.getElementById('intro-screen').classList.add('hidden');hearts(24);}
+function showSurprise(){document.getElementById('surprise-text').style.display='block';document.getElementById('surprise-text').scrollIntoView({behavior:'smooth',block:'center'});hearts(18);}
+function hearts(count){for(let i=0;i<count;i++){const h=document.createElement('span');h.className='floating';h.textContent=['♥','♡','💗'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(18+Math.random()*22)+'px';h.style.animationDuration=(4+Math.random()*4)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),8500);}}
+setTimeout(()=>hearts(8),800);
+</script>
+</body></html>
